@@ -143,7 +143,7 @@
   }
   
   figure {
-
+    margin: 0;
   }
 
   address {
@@ -179,6 +179,14 @@
     margin: 0;
   }
   
+  header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
   .header-divider {
     background: #3a3a3a; 
     width: 100%;
@@ -246,6 +254,10 @@
   /* Hero Area */
   
   .hero-area {
+    background:url(../img/unplugged-retreat.jpg);
+    background-size:cover;
+    background-position: center;
+    min-height: 500px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -296,6 +308,9 @@
   /* Features */
   
   .features {
+    background: url(../img/unplugged-retreat-features.jpg);
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -518,7 +533,9 @@
         justify-content: space-between;
       }
       
-
+      header figure {
+        width:30%;
+      }
 
       header nav {
         width: 20%;
@@ -537,6 +554,9 @@
         display: none;
       }
       /* Hero Area */
+      .hero-area {
+        min-height:600px;
+      }
 
       .hero-area h1 {
         font-size: 3em;
@@ -585,7 +605,7 @@
       .reviews h2 {
         width: 85%;
       }
-    
+      .reviews article figure,
       .reviews article div {
         width: 49%;
       }
@@ -703,9 +723,14 @@
     }
     
       /* Hero */
+
+      .hero-area {
+        min-height:775px;
+      }
+
       .hero-area h1 {
         font-size: 3.75em;
-        width: 60%;
+        width: 80%;
 
     }
     
